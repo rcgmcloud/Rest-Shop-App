@@ -1,4 +1,15 @@
 extends layout
 
 block content
-  h1 Rest Shop, MADAFAKA. That's where you steh.
+  div.header
+    h1.title THE REST SHOP
+  div.row
+    div.large-12.columns
+      ul.large-block-grid-4.small-block-grid-2
+        each product in products
+          li
+            a(href="/products/#{product.id}")
+              img(src="/ref/shopping-icon.png")
+              h4.price $ #{product.price}
+              h5 #{product.name}
+              h6 #{product.description}

@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Kill_The_Noise';
+  src:url('ref/Kill_The_Noise.otf');
+  /*font-weight: 100px;*/
+}
+
+nav *, nav.top-bar, .top-bar-section ul li, .top-bar-section ul li:hover:not(.has-form)>a, .top-bar-section ul li>a:hover, .top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li:not(.has-form) a:not(.button):hover {
+  background: rgba(23, 153, 153, 1);
+}
+
+nav li{
+  height: 45px;
+}
+
+nav ul li p {
+  line-height: 45px;
+}
+
+.header {
+  background: rgba(34, 222, 222, 0.8);
+  margin-bottom: 50px;
+}
+
+.title {
+  margin-top: 0;
+  font-family: Verdana;
+  text-align: center !important;
+  /*font-weight: bold;*/
+  color: white;
+  font-size: 5rem;
+}
+
+.price {
+  text-align: right;
+}
+
+.product {
+  margin-top: 20vh;
+}
+
+.form {
+  margin: 30vh auto 0 auto;
+}
+
+form {
+  padding-right: 60px;
+}
+.buyButton {
+  display:block;
+  margin: 15px;
+}
+
+.form label {
+  display: inline;
+
+}
+
+.form input {
+  width:100%;
+}
+
+h5 {
+  font-weight: bold;
+}

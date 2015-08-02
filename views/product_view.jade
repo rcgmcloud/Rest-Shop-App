@@ -1,3 +1,17 @@
 extends layout
 block content
-  div
+  div.text-center.product.large-7.columns
+    h1 #{products.name}
+    img(src="/ref/shopping-icon.png")
+    h4 #{products.description}
+    h4 $#{products.price}
+  div.large-5.columns.form.row
+    form#productForm(action="http://localhost:8080/orders" method="POST")
+      div.row
+        label Name:
+        input(name="name" placeholder="Name")
+        label Quantity:
+        input(name="quantity" type="number" placeholder="Quantity")
+        input(type="hidden" name="product_id" value="#{products.id}")
+      button.button.buyButton(type="submit") BUY
+
