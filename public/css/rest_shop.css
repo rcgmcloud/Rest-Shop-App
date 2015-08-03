@@ -5,7 +5,8 @@
 }
 
 nav *, nav.top-bar, .top-bar-section ul li, .top-bar-section ul li:hover:not(.has-form)>a, .top-bar-section ul li>a:hover, .top-bar-section li:not(.has-form) a:not(.button), .top-bar-section li:not(.has-form) a:not(.button):hover {
-  background: rgba(23, 153, 153, 1);
+  background: url("/ref/shades_bg.jpg");
+  /*background: rgba(23, 173, 173, 1);*/
 }
 
 nav li{
@@ -17,17 +18,35 @@ nav ul li p {
 }
 
 .header {
-  background: rgba(34, 222, 222, 0.8);
-  margin-bottom: 50px;
+  background: rgba(34, 212, 212, 1);
+  /*background: url("/ref/shades_bg.jpg");*/
+  margin-bottom: 0px;
+  padding: 5px;
+}
+
+.slider {
+  margin: 20px auto 50px auto;
+  width: 1000px;
+  /*margin-bottom: 20px;*/
 }
 
 .title {
-  margin-top: 0;
-  font-family: Verdana;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-family: "Trajan Pro";
   text-align: center !important;
   /*font-weight: bold;*/
   color: white;
   font-size: 5rem;
+}
+
+.subheader {
+  margin-top: 0px;
+  font-family: "Trajan Pro";
+  text-align: center !important;
+  /*font-weight: bold;*/
+  color: white;
+  font-size: 1rem;
 }
 
 .price {
@@ -61,4 +80,28 @@ form {
 
 h5 {
   font-weight: bold;
+}
+
+h6 {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+/*.ordersDiv {
+  padding: 3px;
+  margin: 0px;
+}*/
+
+.orderBox {
+  background: rgba(34, 212, 212, .2);
+  padding: 10px;
+  border: 10px black white;
+  margin: 0px;
+  margin-bottom: 5px;
+  /*padding-bottom: 0px;*/
+}
+
+.orderTitle {
+  margin: 0 auto;
+  font-family: "Trajan Pro";
 }

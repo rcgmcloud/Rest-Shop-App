@@ -1,2 +1,17 @@
 extends layout
+
 block content
+  div.header
+    h1.title ORDERS
+  div.row
+    div.ordersDiv.large-12.columns
+      //- ul.large-block-grid-3.small-block-grid-1
+      ul
+        each order in orders
+          li.orderBox
+            h6 ID#: #{order.id}   Name: #{order.name}   Product ID #: #{order.product_id}   Quantity: #{order.quantity}
+
+            //- h6 Transaction #: #{order.id}
+            //- h6 Name: #{order.name}
+            //- h6 Product ID #: #{order.product_id}
+            //- h6 Quantity: #{order.quantity}

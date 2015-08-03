@@ -3,6 +3,7 @@ $(function(){
   console.log(data);
   });
 
+
   $("#productForm").submit(function(event){
     event.preventDefault();
     var dataArray = $(this).serializeArray();

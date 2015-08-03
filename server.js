@@ -33,6 +33,12 @@ app.get('/products/:id', function (req, res, next) {
   });
 });
 
+app.get('/orders', function (req, res, next) {
+  client.get('http://localhost:8080/orders', function (err, _req, _res, obj) {
+    return res.render('orders', {orders: obj});
+  });
+});
+
 
 app.listen(3000, function () {
  console.log("running");
