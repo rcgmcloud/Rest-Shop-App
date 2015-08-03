@@ -8,8 +8,9 @@ block content
       //- ul.large-block-grid-3.small-block-grid-1
       ul
         each order in orders
-          li.orderBox
-            h6 ID#: #{order.id}   Name: #{order.name}   Product ID #: #{order.product_id}   Quantity: #{order.quantity}
+          a(href="/order_view/#{order.id}")
+            li.orderBox.text-center
+              h6 ID#: #{order.id}   Name: #{order.name}   Product ID #: #{order.product_id}  Quantity: #{order.quantity}
 
             //- h6 Transaction #: #{order.id}
             //- h6 Name: #{order.name}

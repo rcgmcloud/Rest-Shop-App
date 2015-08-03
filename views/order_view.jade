@@ -1,2 +1,13 @@
 extends layout
+
 block content
+  div.header
+    h1.title ORDER DETAIL
+  div.row
+    div.orderDiv.large-12.columns.text-center
+      h4 Transaction #: #{order.id}
+      h4 Customer Name: #{order.name}
+      h4 Product Number: #{order.product_id}
+      h4 Quantity: #{order.quantity}
+      h4 Purchase Date: #{order.createdAt}
+

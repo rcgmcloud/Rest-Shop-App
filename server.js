@@ -37,8 +37,16 @@ app.get('/orders', function (req, res, next) {
   client.get('http://localhost:8080/orders', function (err, _req, _res, obj) {
     return res.render('orders', {orders: obj});
   });
+  client.get('http://localhost:8080/products', function (err, _req, _res, obj) {
+    return res.render('orders', {products: obj});
+  });
 });
 
+app.get('/order_view/:id', function (req, res, next) {
+  client.get('http://localhost:8080/orders/' + req.params.id, function (err, _req, _res, obj) {
+    return res.render('order_view', {order: obj});
+  });
+});
 
 app.listen(3000, function () {
  console.log("running");

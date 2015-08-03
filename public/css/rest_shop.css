@@ -87,10 +87,12 @@ h6 {
   margin-bottom: 1px;
 }
 
-/*.ordersDiv {
+.orderDiv {
+  background: rgba(34, 212, 212, .2);
   padding: 3px;
   margin: 0px;
-}*/
+  margin-top: 50px;
+}
 
 .orderBox {
   background: rgba(34, 212, 212, .2);
