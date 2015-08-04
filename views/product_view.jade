@@ -13,6 +13,5 @@ block content
         label Quantity:
         input(name="quantity" type="number" placeholder="Quantity")
         input(type="hidden" name="product_id" value="#{products.id}")
-    a(href="/")
-      button.button.buyButton(type="submit") BUY
+        button.button.buyButton(type="submit" onclick="location.href='http://localhost:3000'") BUY
 
